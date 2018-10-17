@@ -1,0 +1,64 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 60%;
+    padding-bottom: 40%;
+}
+
+.slider-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#image1, #image2, #image3, #image4, #image5 {
+    display: none;
+}
+
+.nav {
+    width: 100%;
+    height: 11px;
+    bottom: 10%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+}
+
+.dots {
+    border: 0.6px solid #fff;
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: #000000d3;
+}
+
+#image1:checked ~ #books,
+#image2:checked ~ #quote,
+#image3:checked ~ #coffee,
+#image4:checked ~ #christmas,
+#image5:checked ~ #mountain {
+    z-index: 9;
+}
+
+#image1:checked ~ .nav #dot1,
+#image2:checked ~ .nav #dot2,
+#image3:checked ~ .nav #dot3,
+#image4:checked ~ .nav #dot4,
+#image5:checked ~ .nav #dot5 {
+    background: rgb(255, 4, 4);
+    box-shadow: 0 0 3px 2px #fff;
+}
